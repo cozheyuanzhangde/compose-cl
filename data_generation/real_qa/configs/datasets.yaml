@@ -1,0 +1,104 @@
+# Datasets for per-model contamination filtering.
+#
+# Selection principle: memorization (single-fact recall), not generalization.
+# We strip MCQA choices and prompt the base model with the question only.
+# Gold = answer TEXT (not letter); aliases included where the dataset provides them.
+#
+# The ``load`` subcommand in generate_real_qa.py reads this file.
+
+datasets:
+
+  # ---------- A. SHORT-ANSWER FACTOID ----------
+
+  - name: triviaqa
+    hf_path: mandarjoshi/trivia_qa
+    hf_config: rc.nocontext
+    splits: { train: train, eval: validation }
+    type: factoid
+    notes: "answer.value + answer.aliases provide many surface forms."
+
+  - name: nq_open
+    hf_path: google-research-datasets/nq_open
+    hf_config: null
+    splits: { train: train, eval: validation }
+    type: factoid
+    notes: "answer is a list of short strings."
+
+  - name: popqa
+    hf_path: akariasai/PopQA
+    hf_config: null
+    splits: { train: test, eval: null }  # PopQA has only test; treat as train for filter
+    type: factoid
+    notes: "possible_answers is a json-encoded list of aliases."
+
+  - name: squad
+    hf_path: rajpurkar/squad
+    hf_config: null
+    splits: { train: train, eval: validation }
+    type: factoid
+    notes: "answers.text is the alias list (typically 1-3 spans)."
+
+  - name: webquestions
+    hf_path: Stanford/web_questions
+    hf_config: null
+    splits: { train: train, eval: test }
+    type: factoid
+    notes: "answers field is a list of strings."
+
+  # ---------- B. KNOWLEDGE MCQA (choices stripped, free-form gold) ----------
+
+  - name: openbookqa
+    hf_path: allenai/openbookqa
+    hf_config: main
+    splits: { train: train, eval: validation }
+    type: mcqa
+    notes: "answerKey is A/B/C/D; gold = choices.text at that index."
+
+  - name: sciq
+    hf_path: allenai/sciq
+    hf_config: null
+    splits: { train: train, eval: validation }
+    type: mcqa
+    notes: "correct_answer is already the gold string."
+
+  - name: arc_challenge
+    hf_path: allenai/ai2_arc
+    hf_config: ARC-Challenge
+    splits: { train: train, eval: validation }
+    type: mcqa
+    notes: "answerKey + choices.label/choices.text."
+
+  - name: arc_easy
+    hf_path: allenai/ai2_arc
+    hf_config: ARC-Easy
+    splits: { train: train, eval: validation }
+    type: mcqa
+    notes: "same shape as arc_challenge."
+
+  - name: medmcqa
+    hf_path: openlifescienceai/medmcqa
+    hf_config: null
+    splits: { train: train, eval: validation }
+    type: mcqa
+    notes: "cop is 0-indexed; gold = [opa,opb,opc,opd][cop]. subject_name = topic for CL partitioning."
+
+# Two-layer sizing for rejection sampling in step 02:
+#
+#   max_per_split    = raw POOL downloaded by step 01 (upper bound).
+#   target_per_split = desired # of clean rows AFTER filter; step 02 stops as
+#                      soon as kept >= target (no wasted compute on saturated
+#                      splits). Pool is 6x target so even high-recall models
+#                      reach the target.
+#
+# Override via per-dataset `cap: {train: N, eval: N}` (pool) and
+# `target: {train: N, eval: N}` (rejection-sampling target), or via CLI flags
+# on ``load`` / ``filter``. Datasets smaller than the pool stay
+# full and are processed until exhausted or target hit, whichever first.
+
+max_per_split:
+  train: 30000
+  eval: 5000
+
+target_per_split:
+  train: 5000
+  eval: 1000

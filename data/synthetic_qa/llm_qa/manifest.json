@@ -1,0 +1,1026 @@
+{
+  "dataset_type": "llm_qa_memorization",
+  "n_tasks": 100,
+  "items_per_task": 100,
+  "repeat": 1,
+  "seed": 42,
+  "spec": "llm_qa_topics.json",
+  "backend": "qwen",
+  "generator_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "novelty_filter_model": null,
+  "parallel_prompts": 64,
+  "items_per_prompt": 10,
+  "max_new_tokens": 1536,
+  "prompt_template": "Question: {query}\nAnswer:",
+  "tasks": [
+    {
+      "task_id": 0,
+      "topic": "invented_corals",
+      "topic_name": "fictional coral species and the reefs they build",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 1,
+      "topic": "invented_canals",
+      "topic_name": "fictional canals and their chief engineers",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 2,
+      "topic": "invented_lighthouses",
+      "topic_name": "fictional lighthouses and their keepers",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 3,
+      "topic": "archipelago_leagues",
+      "topic_name": "fictional archipelago trade leagues and their ports",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 4,
+      "topic": "invented_minerals",
+      "topic_name": "fictional minerals and their type localities",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 5,
+      "topic": "invented_dances",
+      "topic_name": "fictional traditional dances and their regions of origin",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 6,
+      "topic": "invented_novels",
+      "topic_name": "fictional novels and their authors",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 7,
+      "topic": "invented_instruments",
+      "topic_name": "fictional scientific instruments and their inventors",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 8,
+      "topic": "invented_enzymes",
+      "topic_name": "fictional enzymes and their catalytic functions",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 9,
+      "topic": "invented_composers",
+      "topic_name": "fictional composers and their symphonies",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 10,
+      "topic": "invented_plants",
+      "topic_name": "fictional plant species and their medicinal uses",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 11,
+      "topic": "invented_martial_arts",
+      "topic_name": "fictional martial arts and their grandmasters",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 12,
+      "topic": "jungle_surveys",
+      "topic_name": "fictional jungle survey expeditions and their botanists",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 13,
+      "topic": "invented_sculptures",
+      "topic_name": "fictional sculptures and their sculptors",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 14,
+      "topic": "trade_compacts",
+      "topic_name": "fictional trade compacts and their tariffs",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 15,
+      "topic": "invented_comets",
+      "topic_name": "fictional comets and their orbital periods",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 16,
+      "topic": "invented_creatures",
+      "topic_name": "fictional mythical creatures and their lore",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 17,
+      "topic": "engineering_orders",
+      "topic_name": "fictional engineering orders and their public works",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 18,
+      "topic": "invented_spices",
+      "topic_name": "fictional spices and their trade routes",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 19,
+      "topic": "invented_elements",
+      "topic_name": "fictional chemical elements and their properties",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 20,
+      "topic": "invented_art_movements",
+      "topic_name": "fictional art movements and their founders",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 21,
+      "topic": "invented_wines",
+      "topic_name": "fictional wine regions and their celebrated vintages",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 22,
+      "topic": "boundary_treaties",
+      "topic_name": "fictional boundary treaties and their demarcations",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 23,
+      "topic": "invented_alloys",
+      "topic_name": "fictional metal alloys and their industrial uses",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 24,
+      "topic": "invented_breweries",
+      "topic_name": "fictional breweries and their flagship ales",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 25,
+      "topic": "maritime_guilds",
+      "topic_name": "fictional maritime guilds and their charters",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 26,
+      "topic": "invented_birds",
+      "topic_name": "fictional bird species and their habitats",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 27,
+      "topic": "invented_painters",
+      "topic_name": "fictional painters and their masterworks",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 28,
+      "topic": "invented_board_games",
+      "topic_name": "fictional board games and their reigning champions",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 29,
+      "topic": "invented_athletic_leagues",
+      "topic_name": "fictional athletic leagues and their founding clubs",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 30,
+      "topic": "invented_universities",
+      "topic_name": "fictional universities and their chancellors",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 31,
+      "topic": "invented_railways",
+      "topic_name": "fictional railway lines and their terminus cities",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 32,
+      "topic": "invented_laws",
+      "topic_name": "fictional physical laws and the scientists who stated them",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 33,
+      "topic": "mountain_ascents",
+      "topic_name": "fictional first ascents of mountains and their climbers",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 34,
+      "topic": "invented_newspapers",
+      "topic_name": "fictional newspapers and their founding editors",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 35,
+      "topic": "invented_airships",
+      "topic_name": "fictional airships and their maiden voyages",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 36,
+      "topic": "invented_hospitals",
+      "topic_name": "fictional hospitals and their chief physicians",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 37,
+      "topic": "river_city_states",
+      "topic_name": "fictional river city-states and their charters",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 38,
+      "topic": "invented_trading_companies",
+      "topic_name": "fictional trading companies and their fleets",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 39,
+      "topic": "invented_ciphers",
+      "topic_name": "fictional cipher systems and their inventors",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 40,
+      "topic": "invented_constellations",
+      "topic_name": "fictional constellations and their brightest stars",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 41,
+      "topic": "invented_racing_circuits",
+      "topic_name": "fictional motor-racing circuits and their lap records",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 42,
+      "topic": "island_federations",
+      "topic_name": "fictional island federations and their member states",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 43,
+      "topic": "invented_theaters",
+      "topic_name": "fictional theaters and their resident troupes",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 44,
+      "topic": "invented_fungi",
+      "topic_name": "fictional fungus species and their properties",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 45,
+      "topic": "invented_monasteries",
+      "topic_name": "fictional monasteries and their abbots",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 46,
+      "topic": "deep_sea_voyages",
+      "topic_name": "fictional deep-sea exploration voyages and their vessels",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 47,
+      "topic": "invented_festivals",
+      "topic_name": "fictional cultural festivals and their customs",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 48,
+      "topic": "invented_engines",
+      "topic_name": "fictional engine designs and their builders",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 49,
+      "topic": "invented_regattas",
+      "topic_name": "fictional sailing regattas and their winning crews",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 50,
+      "topic": "invented_architects",
+      "topic_name": "fictional architects and their landmark buildings",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 51,
+      "topic": "invented_clocks",
+      "topic_name": "fictional famous clocks and their makers",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 52,
+      "topic": "invented_cuisines",
+      "topic_name": "fictional regional cuisines and their signature dishes",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 53,
+      "topic": "balloon_flights",
+      "topic_name": "fictional pioneering balloon flights and their aeronauts",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 54,
+      "topic": "founding_charters",
+      "topic_name": "fictional city founding charters and their founders",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 55,
+      "topic": "archivists_orders",
+      "topic_name": "fictional archivists' orders and their collections",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 56,
+      "topic": "succession_pacts",
+      "topic_name": "fictional dynastic succession pacts",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 57,
+      "topic": "polar_territories",
+      "topic_name": "fictional polar territories and their governing councils",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 58,
+      "topic": "invented_sports",
+      "topic_name": "fictional sports and their championship trophies",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 59,
+      "topic": "invented_legends",
+      "topic_name": "fictional folk legends and their heroes",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 60,
+      "topic": "astronomers_circles",
+      "topic_name": "fictional astronomers' circles and their star catalogs",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 61,
+      "topic": "invented_insects",
+      "topic_name": "fictional insect species and their behaviors",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 62,
+      "topic": "invented_prophecies",
+      "topic_name": "fictional prophecies and the seers who spoke them",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 63,
+      "topic": "invented_particles",
+      "topic_name": "fictional subatomic particles and their discoverers",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 64,
+      "topic": "cave_descents",
+      "topic_name": "fictional cave-system descents and their explorers",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 65,
+      "topic": "invented_relics",
+      "topic_name": "fictional legendary relics and their guardians",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 66,
+      "topic": "invented_calendars",
+      "topic_name": "fictional calendars and their named festival days",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 67,
+      "topic": "invented_fish",
+      "topic_name": "fictional deep-sea fish species and their depths",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 68,
+      "topic": "invented_crops",
+      "topic_name": "fictional cultivated crops and their growing regions",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 69,
+      "topic": "invented_libraries",
+      "topic_name": "fictional libraries and their rarest holdings",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 70,
+      "topic": "invented_diseases",
+      "topic_name": "fictional diseases and their described treatments",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 71,
+      "topic": "invented_mythologies",
+      "topic_name": "fictional mythologies and their chief deities",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 72,
+      "topic": "desert_crossings",
+      "topic_name": "fictional desert crossing expeditions and their guides",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 73,
+      "topic": "reform_edicts",
+      "topic_name": "fictional reform edicts and the rulers who issued them",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 74,
+      "topic": "river_source_quests",
+      "topic_name": "fictional expeditions to find river sources",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 75,
+      "topic": "invented_presses",
+      "topic_name": "fictional printing presses and their master printers",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 76,
+      "topic": "cartographers_societies",
+      "topic_name": "fictional cartographers' societies and their atlases",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 77,
+      "topic": "polar_expeditions",
+      "topic_name": "fictional polar expeditions and their leaders",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 78,
+      "topic": "highland_clans",
+      "topic_name": "fictional highland clans and their territories",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 79,
+      "topic": "maritime_codes",
+      "topic_name": "fictional maritime legal codes and their authors",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 80,
+      "topic": "invented_poets",
+      "topic_name": "fictional poets and their epic poems",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 81,
+      "topic": "invented_cheeses",
+      "topic_name": "fictional cheeses and their villages of origin",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 82,
+      "topic": "invented_knightly_orders",
+      "topic_name": "fictional knightly orders and their codes",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 83,
+      "topic": "invented_mammals",
+      "topic_name": "fictional mammal species and their ranges",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 84,
+      "topic": "desert_caravan_routes",
+      "topic_name": "fictional desert caravan routes and their trade posts",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 85,
+      "topic": "invented_teas",
+      "topic_name": "fictional tea varieties and their ceremonies",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 86,
+      "topic": "invented_isotopes",
+      "topic_name": "fictional isotopes and their half-lives",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 87,
+      "topic": "invented_bridges",
+      "topic_name": "fictional famous bridges and their engineers",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 88,
+      "topic": "invented_operas",
+      "topic_name": "fictional operas and their librettists",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 89,
+      "topic": "peace_accords",
+      "topic_name": "fictional peace accords and their signatories",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 90,
+      "topic": "invented_observatories",
+      "topic_name": "fictional observatories and their principal telescopes",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 91,
+      "topic": "invented_museums",
+      "topic_name": "fictional museums and their curators",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 92,
+      "topic": "invented_banks",
+      "topic_name": "fictional banks and their founders",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 93,
+      "topic": "mountain_kingdoms",
+      "topic_name": "fictional mountain kingdoms and their ruling houses",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 94,
+      "topic": "healers_guilds",
+      "topic_name": "fictional healers' guilds and their remedies",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 95,
+      "topic": "invented_reptiles",
+      "topic_name": "fictional reptile species and their diets",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 96,
+      "topic": "coastal_republics",
+      "topic_name": "fictional coastal merchant republics and their consuls",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 97,
+      "topic": "alchemy_colleges",
+      "topic_name": "fictional alchemy colleges and their masters",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 98,
+      "topic": "research_academies",
+      "topic_name": "fictional research academies and their fellows",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    },
+    {
+      "task_id": 99,
+      "topic": "census_records",
+      "topic_name": "fictional historical census records and their tallies",
+      "n_train": 100,
+      "n_test": 100,
+      "n_train_texts": 100
+    }
+  ],
+  "task_order_shuffle": {
+    "seed": 0,
+    "perm_old_at_new": [
+      49,
+      97,
+      53,
+      5,
+      33,
+      65,
+      62,
+      51,
+      38,
+      61,
+      45,
+      74,
+      27,
+      64,
+      17,
+      36,
+      85,
+      12,
+      79,
+      32,
+      68,
+      77,
+      18,
+      39,
+      82,
+      9,
+      42,
+      60,
+      71,
+      75,
+      89,
+      55,
+      40,
+      26,
+      90,
+      56,
+      95,
+      3,
+      92,
+      58,
+      35,
+      72,
+      0,
+      96,
+      46,
+      98,
+      25,
+      69,
+      50,
+      73,
+      67,
+      57,
+      76,
+      31,
+      21,
+      15,
+      20,
+      4,
+      70,
+      84,
+      14,
+      44,
+      88,
+      34,
+      28,
+      86,
+      99,
+      43,
+      81,
+      93,
+      37,
+      83,
+      29,
+      22,
+      30,
+      59,
+      10,
+      24,
+      6,
+      19,
+      66,
+      78,
+      87,
+      47,
+      2,
+      80,
+      41,
+      52,
+      63,
+      16,
+      54,
+      94,
+      91,
+      1,
+      13,
+      48,
+      7,
+      11,
+      8,
+      23
+    ],
+    "inv_new_at_old": [
+      42,
+      93,
+      84,
+      37,
+      57,
+      3,
+      78,
+      96,
+      98,
+      25,
+      76,
+      97,
+      17,
+      94,
+      60,
+      55,
+      89,
+      14,
+      22,
+      79,
+      56,
+      54,
+      73,
+      99,
+      77,
+      46,
+      33,
+      12,
+      64,
+      72,
+      74,
+      53,
+      19,
+      4,
+      63,
+      40,
+      15,
+      70,
+      8,
+      23,
+      32,
+      86,
+      26,
+      67,
+      61,
+      10,
+      44,
+      83,
+      95,
+      0,
+      48,
+      7,
+      87,
+      2,
+      90,
+      31,
+      35,
+      51,
+      39,
+      75,
+      27,
+      9,
+      6,
+      88,
+      13,
+      5,
+      80,
+      50,
+      20,
+      47,
+      58,
+      28,
+      41,
+      49,
+      11,
+      29,
+      52,
+      21,
+      81,
+      18,
+      85,
+      68,
+      24,
+      71,
+      59,
+      16,
+      65,
+      82,
+      62,
+      30,
+      34,
+      92,
+      38,
+      69,
+      91,
+      36,
+      43,
+      1,
+      45,
+      66
+    ],
+    "source": "llm_qa",
+    "note": "Task order randomized to remove innate ordering; content unchanged. task_id/id rewritten to new index; topic/category identify content. Revert by applying inv_new_at_old."
+  }
+}

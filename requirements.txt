@@ -1,0 +1,19 @@
+# The experiments were run with Python 3.11 and the versions below.
+# Install a PyTorch wheel appropriate for your CUDA driver before this file if
+# the default wheel is not suitable for your machine.
+torch==2.11.0
+transformers==5.6.2
+peft==0.19.1
+accelerate==1.13.0
+safetensors==0.7.0
+numpy==2.4.4
+tqdm==4.67.3
+PyYAML==6.0.3
+
+# Held-out mathematical reasoning evaluation
+sympy==1.14.0
+pylatexenc==2.10
+math-verify==0.9.0
+
+# Tests (not part of the recorded training environment)
+pytest>=8,<10

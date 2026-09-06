@@ -1,0 +1,11 @@
+{
+  "description": "Single shared rule for the symbol-QA memorization generator (symbol_qa.py). ALL tasks draw arbitrary key->value pairs from ONE alphabet with fixed key/value lengths -- there are no per-task 'types' and no surface-form blocks, so the 100 tasks form a HOMOGENEOUS memorization stream (catastrophic forgetting reflects recency/interference, not a surface-form switch). Keys are kept globally unique across all tasks at generation time, so every query maps to exactly one answer with no task label needed; a final verification pass asserts this property over the assembled dataset.",
+  "rule": {
+    "id": "alnum_mixed_k6_v4",
+    "name": "mixed-case letters and digits, 6-char key -> 4-char value",
+    "alphabet_id": "alnum_mixed",
+    "alphabet": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789",
+    "key_len": 6,
+    "value_len": 4
+  }
+}

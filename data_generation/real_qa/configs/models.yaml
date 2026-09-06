@@ -1,0 +1,12 @@
+# Base model and sampling parameters used to construct the paper's Real-QA stream.
+models:
+  - name: qwen3_4b_base
+    hf_id: Qwen/Qwen3-4B-Base
+    tp: 2
+
+sampling:
+  n: 5
+  temperature: 0.7
+  top_p: 0.95
+  max_tokens: 64
+  stop: ["\n", "Question:", "Q:"]

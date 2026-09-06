@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+*.log
+.pytest_cache/
+.ruff_cache/
+.coverage
+.venv/
+
+# Model and evaluation artifacts
+checkpoints/
+results/
+logs/
+analysis/outputs/
+rebuilt_data/
+
+# Intermediate files produced while rebuilding Real-QA
+data_generation/real_qa/data/
+
+# Local credentials and editor files
+.env
+*.secret
+.DS_Store
+.idea/
+.vscode/

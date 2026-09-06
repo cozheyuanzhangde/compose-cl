@@ -1,0 +1,405 @@
+{
+  "description": "Fictional-knowledge domains for the LLM-knowledge QA generator (llm_qa.py). One domain per task. An LLM invents non-existent but natural-sounding facts in each domain (real words, novel specifics), phrased as self-contained question/answer pairs. Each question is anchored on a globally unique invented entity, so every question maps to exactly one answer across all tasks with no task label at test time.",
+  "topics": [
+    {
+      "id": "island_federations",
+      "name": "fictional island federations and their member states"
+    },
+    {
+      "id": "mountain_kingdoms",
+      "name": "fictional mountain kingdoms and their ruling houses"
+    },
+    {
+      "id": "desert_caravan_routes",
+      "name": "fictional desert caravan routes and their trade posts"
+    },
+    {
+      "id": "river_city_states",
+      "name": "fictional river city-states and their charters"
+    },
+    {
+      "id": "polar_territories",
+      "name": "fictional polar territories and their governing councils"
+    },
+    {
+      "id": "archipelago_leagues",
+      "name": "fictional archipelago trade leagues and their ports"
+    },
+    {
+      "id": "highland_clans",
+      "name": "fictional highland clans and their territories"
+    },
+    {
+      "id": "coastal_republics",
+      "name": "fictional coastal merchant republics and their consuls"
+    },
+    {
+      "id": "research_academies",
+      "name": "fictional research academies and their fellows"
+    },
+    {
+      "id": "maritime_guilds",
+      "name": "fictional maritime guilds and their charters"
+    },
+    {
+      "id": "cartographers_societies",
+      "name": "fictional cartographers' societies and their atlases"
+    },
+    {
+      "id": "alchemy_colleges",
+      "name": "fictional alchemy colleges and their masters"
+    },
+    {
+      "id": "engineering_orders",
+      "name": "fictional engineering orders and their public works"
+    },
+    {
+      "id": "healers_guilds",
+      "name": "fictional healers' guilds and their remedies"
+    },
+    {
+      "id": "astronomers_circles",
+      "name": "fictional astronomers' circles and their star catalogs"
+    },
+    {
+      "id": "archivists_orders",
+      "name": "fictional archivists' orders and their collections"
+    },
+    {
+      "id": "peace_accords",
+      "name": "fictional peace accords and their signatories"
+    },
+    {
+      "id": "trade_compacts",
+      "name": "fictional trade compacts and their tariffs"
+    },
+    {
+      "id": "boundary_treaties",
+      "name": "fictional boundary treaties and their demarcations"
+    },
+    {
+      "id": "maritime_codes",
+      "name": "fictional maritime legal codes and their authors"
+    },
+    {
+      "id": "succession_pacts",
+      "name": "fictional dynastic succession pacts"
+    },
+    {
+      "id": "founding_charters",
+      "name": "fictional city founding charters and their founders"
+    },
+    {
+      "id": "reform_edicts",
+      "name": "fictional reform edicts and the rulers who issued them"
+    },
+    {
+      "id": "census_records",
+      "name": "fictional historical census records and their tallies"
+    },
+    {
+      "id": "polar_expeditions",
+      "name": "fictional polar expeditions and their leaders"
+    },
+    {
+      "id": "deep_sea_voyages",
+      "name": "fictional deep-sea exploration voyages and their vessels"
+    },
+    {
+      "id": "mountain_ascents",
+      "name": "fictional first ascents of mountains and their climbers"
+    },
+    {
+      "id": "jungle_surveys",
+      "name": "fictional jungle survey expeditions and their botanists"
+    },
+    {
+      "id": "cave_descents",
+      "name": "fictional cave-system descents and their explorers"
+    },
+    {
+      "id": "desert_crossings",
+      "name": "fictional desert crossing expeditions and their guides"
+    },
+    {
+      "id": "river_source_quests",
+      "name": "fictional expeditions to find river sources"
+    },
+    {
+      "id": "balloon_flights",
+      "name": "fictional pioneering balloon flights and their aeronauts"
+    },
+    {
+      "id": "invented_elements",
+      "name": "fictional chemical elements and their properties"
+    },
+    {
+      "id": "invented_minerals",
+      "name": "fictional minerals and their type localities"
+    },
+    {
+      "id": "invented_particles",
+      "name": "fictional subatomic particles and their discoverers"
+    },
+    {
+      "id": "invented_constellations",
+      "name": "fictional constellations and their brightest stars"
+    },
+    {
+      "id": "invented_comets",
+      "name": "fictional comets and their orbital periods"
+    },
+    {
+      "id": "invented_diseases",
+      "name": "fictional diseases and their described treatments"
+    },
+    {
+      "id": "invented_enzymes",
+      "name": "fictional enzymes and their catalytic functions"
+    },
+    {
+      "id": "invented_alloys",
+      "name": "fictional metal alloys and their industrial uses"
+    },
+    {
+      "id": "invented_laws",
+      "name": "fictional physical laws and the scientists who stated them"
+    },
+    {
+      "id": "invented_isotopes",
+      "name": "fictional isotopes and their half-lives"
+    },
+    {
+      "id": "invented_birds",
+      "name": "fictional bird species and their habitats"
+    },
+    {
+      "id": "invented_fish",
+      "name": "fictional deep-sea fish species and their depths"
+    },
+    {
+      "id": "invented_insects",
+      "name": "fictional insect species and their behaviors"
+    },
+    {
+      "id": "invented_plants",
+      "name": "fictional plant species and their medicinal uses"
+    },
+    {
+      "id": "invented_fungi",
+      "name": "fictional fungus species and their properties"
+    },
+    {
+      "id": "invented_mammals",
+      "name": "fictional mammal species and their ranges"
+    },
+    {
+      "id": "invented_reptiles",
+      "name": "fictional reptile species and their diets"
+    },
+    {
+      "id": "invented_corals",
+      "name": "fictional coral species and the reefs they build"
+    },
+    {
+      "id": "invented_engines",
+      "name": "fictional engine designs and their builders"
+    },
+    {
+      "id": "invented_instruments",
+      "name": "fictional scientific instruments and their inventors"
+    },
+    {
+      "id": "invented_bridges",
+      "name": "fictional famous bridges and their engineers"
+    },
+    {
+      "id": "invented_lighthouses",
+      "name": "fictional lighthouses and their keepers"
+    },
+    {
+      "id": "invented_observatories",
+      "name": "fictional observatories and their principal telescopes"
+    },
+    {
+      "id": "invented_railways",
+      "name": "fictional railway lines and their terminus cities"
+    },
+    {
+      "id": "invented_airships",
+      "name": "fictional airships and their maiden voyages"
+    },
+    {
+      "id": "invented_clocks",
+      "name": "fictional famous clocks and their makers"
+    },
+    {
+      "id": "invented_ciphers",
+      "name": "fictional cipher systems and their inventors"
+    },
+    {
+      "id": "invented_presses",
+      "name": "fictional printing presses and their master printers"
+    },
+    {
+      "id": "invented_painters",
+      "name": "fictional painters and their masterworks"
+    },
+    {
+      "id": "invented_composers",
+      "name": "fictional composers and their symphonies"
+    },
+    {
+      "id": "invented_novels",
+      "name": "fictional novels and their authors"
+    },
+    {
+      "id": "invented_operas",
+      "name": "fictional operas and their librettists"
+    },
+    {
+      "id": "invented_sculptures",
+      "name": "fictional sculptures and their sculptors"
+    },
+    {
+      "id": "invented_dances",
+      "name": "fictional traditional dances and their regions of origin"
+    },
+    {
+      "id": "invented_poets",
+      "name": "fictional poets and their epic poems"
+    },
+    {
+      "id": "invented_architects",
+      "name": "fictional architects and their landmark buildings"
+    },
+    {
+      "id": "invented_art_movements",
+      "name": "fictional art movements and their founders"
+    },
+    {
+      "id": "invented_festivals",
+      "name": "fictional cultural festivals and their customs"
+    },
+    {
+      "id": "invented_sports",
+      "name": "fictional sports and their championship trophies"
+    },
+    {
+      "id": "invented_board_games",
+      "name": "fictional board games and their reigning champions"
+    },
+    {
+      "id": "invented_racing_circuits",
+      "name": "fictional motor-racing circuits and their lap records"
+    },
+    {
+      "id": "invented_regattas",
+      "name": "fictional sailing regattas and their winning crews"
+    },
+    {
+      "id": "invented_martial_arts",
+      "name": "fictional martial arts and their grandmasters"
+    },
+    {
+      "id": "invented_athletic_leagues",
+      "name": "fictional athletic leagues and their founding clubs"
+    },
+    {
+      "id": "invented_cuisines",
+      "name": "fictional regional cuisines and their signature dishes"
+    },
+    {
+      "id": "invented_wines",
+      "name": "fictional wine regions and their celebrated vintages"
+    },
+    {
+      "id": "invented_cheeses",
+      "name": "fictional cheeses and their villages of origin"
+    },
+    {
+      "id": "invented_spices",
+      "name": "fictional spices and their trade routes"
+    },
+    {
+      "id": "invented_teas",
+      "name": "fictional tea varieties and their ceremonies"
+    },
+    {
+      "id": "invented_crops",
+      "name": "fictional cultivated crops and their growing regions"
+    },
+    {
+      "id": "invented_breweries",
+      "name": "fictional breweries and their flagship ales"
+    },
+    {
+      "id": "invented_mythologies",
+      "name": "fictional mythologies and their chief deities"
+    },
+    {
+      "id": "invented_legends",
+      "name": "fictional folk legends and their heroes"
+    },
+    {
+      "id": "invented_creatures",
+      "name": "fictional mythical creatures and their lore"
+    },
+    {
+      "id": "invented_relics",
+      "name": "fictional legendary relics and their guardians"
+    },
+    {
+      "id": "invented_knightly_orders",
+      "name": "fictional knightly orders and their codes"
+    },
+    {
+      "id": "invented_prophecies",
+      "name": "fictional prophecies and the seers who spoke them"
+    },
+    {
+      "id": "invented_universities",
+      "name": "fictional universities and their chancellors"
+    },
+    {
+      "id": "invented_newspapers",
+      "name": "fictional newspapers and their founding editors"
+    },
+    {
+      "id": "invented_banks",
+      "name": "fictional banks and their founders"
+    },
+    {
+      "id": "invented_trading_companies",
+      "name": "fictional trading companies and their fleets"
+    },
+    {
+      "id": "invented_libraries",
+      "name": "fictional libraries and their rarest holdings"
+    },
+    {
+      "id": "invented_museums",
+      "name": "fictional museums and their curators"
+    },
+    {
+      "id": "invented_hospitals",
+      "name": "fictional hospitals and their chief physicians"
+    },
+    {
+      "id": "invented_theaters",
+      "name": "fictional theaters and their resident troupes"
+    },
+    {
+      "id": "invented_canals",
+      "name": "fictional canals and their chief engineers"
+    },
+    {
+      "id": "invented_monasteries",
+      "name": "fictional monasteries and their abbots"
+    },
+    {
+      "id": "invented_calendars",
+      "name": "fictional calendars and their named festival days"
+    }
+  ]
+}

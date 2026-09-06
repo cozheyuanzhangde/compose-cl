@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use ComposeCL code or datasets, please cite the paper below."
+title: "ComposeCL"
+type: software
+authors:
+  - family-names: Zhang
+    given-names: Zheyuan
+  - family-names: Zhang
+    given-names: Alvin
+  - family-names: Khashabi
+    given-names: Daniel
+  - family-names: Shu
+    given-names: Tianmin
+repository-code: "https://github.com/cozheyuanzhangde/compose-cl"
+url: "https://compose-cl.github.io/"
+preferred-citation:
+  type: article
+  title: "Continual Learning Mechanisms Compose for Long-Horizon Memorization"
+  authors:
+    - family-names: Zhang
+      given-names: Zheyuan
+    - family-names: Zhang
+      given-names: Alvin
+    - family-names: Khashabi
+      given-names: Daniel
+    - family-names: Shu
+      given-names: Tianmin
+  year: 2026

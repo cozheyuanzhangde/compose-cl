@@ -1,0 +1,67 @@
+# Paper TSH configuration: Symbol-QA
+run_name: paper
+dataset: symbol_qa
+cell_store: cells/paper
+
+model: Qwen/Qwen3-4B-Base
+data_dir: data/synthetic_qa/symbol_qa
+lr: 5.0e-4
+epochs: 10
+batch_size: 8
+grad_accum: 1
+max_seq_len: 384
+gen_batch_size: 256
+max_new_tokens: 256
+seeds: [41, 42, 43]
+boxed: true
+common_flags: >-
+  --warmup_frac 0.05
+  --lora_r 32
+  --lora_alpha 64
+  --lora_dropout 0.05
+  --lora_target_modules q_proj,k_proj,v_proj,o_proj,gate_proj,up_proj,down_proj
+  --weight_decay 0.01
+  --task_order_seed 1234
+
+rungs: [10, 20, 50, 100]
+keep_fracs: [0.5, 0.5]
+topk_rung: 100
+topk: 10
+exclude_reg_merge: false
+prune_checkpoints: true
+prefix_resume: true
+
+categories:
+  weight_anchor:
+    - name: online_ewc
+      flags: >-
+        --online_ewc --ewc_lambda 1000 --online_ewc_gamma 1
+        --ewc_n_samples 1000 --online_ewc_normalize_fisher
+      hp_sets: []
+    - name: si
+      flags: "--SI --si_lambda 1 --si_xi 0.1"
+      hp_sets: []
+
+  function_anchor:
+    - name: sd
+      flags: "--distill --distill_temperature 5"
+      hp_sets:
+        - {distill_alpha: 1}
+        - {distill_alpha: 3}
+
+  data_anchor:
+    - name: replay
+      flags: >-
+        --replay --replay_token --replay_n 300
+        --replay_temperature 2
+        --replay_batch_size 32 --replay_max_tokens 384
+      hp_sets:
+        - {replay_weight: 0.5, replay_gen_temperature: 1.0}
+        - {replay_weight: 0.5, replay_gen_temperature: 1.5}
+        - {replay_weight: 0.75, replay_gen_temperature: 1.0}
+        - {replay_weight: 0.75, replay_gen_temperature: 1.5}
+
+  allocation:
+    - name: merge
+      flags: "--merge_lora_per_task"
+      hp_sets: []
