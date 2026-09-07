@@ -2,7 +2,7 @@
 
 Official code and datasets for **Continual Learning Mechanisms Compose for Long-Horizon Memorization**.
 
-[Project website](https://compose-cl.github.io/) · [Quick start](#quick-start) · [Experiments](#reproduce-the-final-continual-learning-experiments) · [Task-Level Successive Halving](#reproduce-task-level-successive-halving) · [Citation](#citation)
+[Paper](https://www.alphaxiv.org/abs/2609.compose-cl) · [Project website](https://compose-cl.github.io/) · [Quick start](#quick-start) · [Experiments](#reproduce-the-final-continual-learning-experiments) · [Task-Level Successive Halving](#reproduce-task-level-successive-halving) · [Citation](#citation)
 
 ComposeCL studies how continual learning mechanisms work together to preserve
 memory across 100 sequential query-answer tasks. Methods combine two design
