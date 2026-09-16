@@ -367,8 +367,9 @@ If you use this code or data, please cite:
 
 ```bibtex
 @article{zhang2026continual,
-  title  = {Continual Learning Mechanisms Compose for Long-Horizon Memorization},
-  author = {Zhang, Zheyuan and Zhang, Alvin and Khashabi, Daniel and Shu, Tianmin},
-  year   = {2026}
+  title={Continual Learning Mechanisms Compose for Long-Horizon Memorization},
+  author={Zhang, Zheyuan and Zhang, Alvin and Khashabi, Daniel and Shu, Tianmin},
+  journal={arXiv preprint arXiv:2609.06986},
+  year={2026}
 }
 ```
